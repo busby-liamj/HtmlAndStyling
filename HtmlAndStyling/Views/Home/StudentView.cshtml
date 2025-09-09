@@ -1,0 +1,23 @@
+@model Student
+
+@{
+    ViewData["Title"] = "Student";
+}
+
+<h1>Name: @Model.Name</h1>
+
+@{
+    if (Model.Name.ToUpper() == "DAVE")
+    {
+        <a asp-controller="Home" asp-action="Broken">CLick me</a>
+        return;
+    }
+    if (Model.Age < 18)
+    {
+        <p>Bro thinks he can drink lol</p>
+        return;
+    }
+
+    <p>Goon, have a drink</p>
+
+}

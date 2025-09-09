@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Hey, world!</h1>
+<h6>Bye, world!</h6>
+<p>Sourdough</p>
+
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="Images/sourdough.jpg" alt="Card image favicon">
+    <div class="card-body">
+        <h5 class="card-title">Sourdough</h5>
+        <p class="card-text">I like sourdough.</p>
+        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.theclevercarrot.com%2F2014%2F01%2Fsourdough-bread-a-beginners-guide%2F&psig=AOvVaw2meU2hsgaJliTORCNmLe7i&ust=1757163198873000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCIiuvJPVwY8DFQAAAAAdAAAAABAE" class="btn btn-primary">View sourdough</a>
+    </div>
+</div>
+
+<a asp-controller="Home" asp-action="New">Make a new student</a>
+
+@{
+    for (int i = 0; i < 10; i++)
+    {
+        <h1>@i</h1>
+    }
+}
